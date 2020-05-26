@@ -1,0 +1,23 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# https://www.playframework.com/documentation/latest/ScalaRouting
+# ~~~~
+
+GET     /students                   controllers.StudentController.list
+POST    /students                   controllers.StudentController.create
+GET     /students/:id               controllers.StudentController.get(id: reactivemongo.bson.BSONObjectID)
+
+
+GET     /courses                    controllers.CourseController.list
+POST    /courses                    controllers.CourseController.create
+GET     /courses/:id                controllers.CourseController.get(id: reactivemongo.bson.BSONObjectID)
+
+
+# Swagger docs
+GET       /                           controllers.DocsController.redirectToDocs
+GET       /swagger.json               controllers.ApiHelpController.getResources
+GET       /api-docs                   controllers.DocsController.redirectToDocs
+
+
+# Map static resources from the /public folder to the /assets URL path
+GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)
