@@ -25,4 +25,4 @@ To launch them just type ```test``` in a running SBT session or simply type ```s
 
 Enjoy.
 
-Author: [Richard Palomino](www.linkedin.com/in/richard-luis-palomino-felix)
+Author: [Richard Palomino](https://www.linkedin.com/in/richard-luis-palomino-felix)
